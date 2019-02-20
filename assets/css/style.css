@@ -4,6 +4,8 @@ body {
   line-height: 34px;
   color: #777777;
   background: url("../images/concrete_seamless.png");
+  margin: 0px;
+  padding: 0px;
 }
 
 * {
@@ -250,20 +252,45 @@ input[type=submit] {
 
  #logo {
    width:100%;
-  
- }
+   }
 
  .centered-on-small-screen {
    width:100%;
    margin:0px auto;
    float:none;
+   -webkit-animation-name: change-nav-name-color;
+   -webkit-animation-duration: 8s;  
+   animation-name: change-nav-name-color;
+   animation-duration: 8s;
+
  }
+
+/* Safari 4.0 - 8.0
+@-webkit-keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+Standard syntax
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+} */
+
 
  nav a {
   width:32%;
   margin: auto;
   float:none;
   text-align:center;
+ }
+
+ #main-container {
+   padding-top: 10px;
  }
   
 }
